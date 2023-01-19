@@ -1,0 +1,35 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net6.0-windows</TargetFramework>
+    <Nullable>enable</Nullable>
+    <UseWPF>true</UseWPF>
+    <ApplicationIcon>images\Chewy_female_anime.ico</ApplicationIcon>
+    <Product>MySqlBackuper</Product>
+    <Description>MySqlBackuper offline</Description>
+    <Copyright>Mariks</Copyright>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="images\ben-nicholas-ben-nicholas-bennicholas-katorga.jpg" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Content Include="images\Chewy_female_anime.ico" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="MySql.Data" Version="8.0.31" />
+    <PackageReference Include="MySqlBackup.NET" Version="2.3.7" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Resource Include="images\ben-nicholas-ben-nicholas-bennicholas-katorga.jpg" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="backups\" />
+  </ItemGroup>
+
+</Project>
